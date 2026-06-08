@@ -1,0 +1,89 @@
+/* Thiết lập cơ bản */
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #f0f2f5; /* Màu nền xám nhạt nhẹ nhàng */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Căn giữa trang web theo chiều dọc */
+}
+
+/* Hộp bọc toàn bộ nội dung */
+.profile-container {
+    background: #ffffff;
+    max-width: 450px;
+    width: 90%;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ hiện đại */
+    text-align: center;
+}
+
+/* Bo tròn ảnh đại diện */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e2e8f0;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #1a202c;
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+.bio {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 2rem 0;
+}
+
+/* Định dạng các nút bấm */
+.links-group h2 {
+    font-size: 1.1rem;
+    color: #718096;
+    margin-bottom: 1rem;
+}
+
+.web-btn {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease; /* Hiệu ứng mượt mà khi rê chuột vào */
+}
+
+/* Màu sắc riêng cho từng nút */
+.mail-btn {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+}
+.fb-btn {
+    background-color: #e7f3ff;
+    color: #1877f2;
+}
+.blog-btn {
+    background-color: #f7fafc;
+    color: #4a5568;
+    border: 1px solid #e2e8f0;
+}
+
+/* Hiệu ứng tương tác khi di chuột vào nút (Hover) */
+.web-btn:hover {
+    transform: translateY(-2px); /* Nút nhích lên một chút */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
